@@ -33,7 +33,8 @@ function allHaveMiddleInitials (staffList) {
     }
   }
   }
-  return outarr;
+  if (outarr.length === staffList.length) {return true}
+    else {return false};
 }
   
   console.log(allHaveMiddleInitials(staff));
